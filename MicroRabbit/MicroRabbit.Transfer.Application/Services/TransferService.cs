@@ -19,9 +19,11 @@ namespace MicroRabbit.Transfer.Application.Services
             _bus = bus;
         }
 
+
         public IEnumerable<TransferLog> GetTransferLogs()
         {
             return _transferRepository.GetTransferLogs();
         }
+
     }
 }
