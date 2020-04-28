@@ -1,5 +1,4 @@
-﻿using Microsoft.EntityFrameworkCore.Metadata;
-using Microsoft.EntityFrameworkCore.Migrations;
+﻿using Microsoft.EntityFrameworkCore.Migrations;
 
 namespace MicroRabbit.Banking.Data.Migrations
 {
@@ -12,7 +11,7 @@ namespace MicroRabbit.Banking.Data.Migrations
                 columns: table => new
                 {
                     Id = table.Column<int>(nullable: false)
-                        .Annotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn),
+                        .Annotation("SqlServer:Identity", "1, 1"),
                     AccountType = table.Column<string>(nullable: true),
                     AccountBalance = table.Column<decimal>(nullable: false)
                 },
